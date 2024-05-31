@@ -1,4 +1,4 @@
--- M2 Default HUD version 1.0
+-- M2 Default HUD version 1.1
 -- by Hopper
 -- from work by Bungie and the Aleph One developers
 
@@ -327,10 +327,10 @@ function Triggers.init()
   end
   
   for idx, name in ipairs({
-    "network compass shape nw",
-    "network compass shape ne",
-    "network compass shape sw",
-    "network compass shape se" }) do
+    "network compass nw",
+    "network compass ne",
+    "network compass sw",
+    "network compass se" }) do
     imgs[name] = Shapes.new{ collection = 0, texture_index = idx + 50, type = TextureTypes["interface"] }
   end
   
@@ -711,7 +711,7 @@ end
 function weapon_bullet_draw(trigger)
   local disp = trigger.bullet_display
   local rounds = trigger.rounds
-  if rounds < 0 then rounds = 0 end
+  if rounds < 0 then return end
   local max = disp.across * disp.down
   if rounds > max then rounds = max end
   local dr = adj_rect(disp)
