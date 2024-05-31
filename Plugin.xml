@@ -1,0 +1,3 @@
+<plugin name="Default HUD" version="1.0" description="Marathon 2 default heads-up display" hud_lua="Default_HUD.lua">
+</plugin>
+

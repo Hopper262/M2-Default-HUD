@@ -1,0 +1,46 @@
+M2 Default HUD 1.0
+------------------
+by Hopper
+from work by Bungie and the Aleph One developers
+
+----------------------------------------------------------------
+DESCRIPTION:
+This Lua HUD replicates the hardcoded interface built into Marathon 2, Marathon Infinity, and Aleph One. It uses graphics and positioning information from the engine, so it should be fully compatible with third-party scenarios.
+
+Why does this exist? To serve as a base and example for Lua HUD authors. If you want an inventory panel or classic net stats in your custom HUD, this code draws the same information in the same way as the built-in HUD. It demonstrates more of the Lua API than the default XBLA HUD.
+
+If you aren't planning to write or customize HUDs, this isn't for you.
+
+----------------------------------------------------------------
+COMPATIBILITY:
+Marathon Infinity - Compatible
+Marathon 2: Durandal - Compatible
+Marathon - Not compatible
+Other Aleph One-compatible scenarios - Compatible
+
+For a HUD in the M2 style that works with Marathon, see:
+
+http://simplici7y.com/items/m1a1-hud
+
+----------------------------------------------------------------
+REQUIREMENTS:
+- Aleph One 1.1 (release 2014-01-04) or later
+- OpenGL is not required, but fonts will not be scaled under Software, so leave your "HUD Size" preference at Normal for best results.
+
+----------------------------------------------------------------
+INSTALLATION:
+- Drag the downloaded .zip file, or the unzipped "Default HUD" folder, into the "Plugins" folder inside your Marathon 2, Marathon Infinity, or custom scenario folder. (Create a "Plugins" folder if you don't already have one.)
+- Launch Aleph One, and go to "Preferences", then "Environment", then "Plugins" make sure the plugin is listed as "Enabled". You can click on it to turn it on or off.
+
+NOTE: "Use HUD Script" (located in the Environment preferences) MUST be unchecked! The plugin won't work if that checkbox is on. If you're not sure whether the plugin is active, uncomment line 10 of the Lua script.
+
+----------------------------------------------------------------
+CHANGELOG:
+
+v1.0:
+* Initial version
+
+----------------------------------------------------------------
+CONTACT:
+If you have any questions, comments or bugs to report, you can email me:
+- hopper@whpress.com
