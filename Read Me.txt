@@ -1,4 +1,4 @@
-M2 Default HUD 1.1
+M2 Default HUD 1.2
 ------------------
 by Hopper
 from work by Bungie and the Aleph One developers
@@ -18,25 +18,17 @@ Marathon 2: Durandal - Compatible
 Marathon - Not compatible
 Other Aleph One-compatible scenarios - Compatible
 
-For a HUD in the M2 style that works with Marathon, see:
-
-http://simplici7y.com/items/m1a1-hud
-
-----------------------------------------------------------------
-REQUIREMENTS:
-- Aleph One 1.1 (release 2014-01-04) or later
-- OpenGL is not required, but fonts will not be scaled under Software, so leave your "HUD Size" preference at Normal for best results.
-
 ----------------------------------------------------------------
 INSTALLATION:
 - Drag the downloaded .zip file, or the unzipped "Default HUD" folder, into the "Plugins" folder inside your Marathon 2, Marathon Infinity, or custom scenario folder. (Create a "Plugins" folder if you don't already have one.)
 - Launch Aleph One, and go to "Preferences", then "Environment", then "Plugins" make sure the plugin is listed as "Enabled". You can click on it to turn it on or off.
 
-NOTE: "Use HUD Script" (located in the Environment preferences) MUST be unchecked! The plugin won't work if that checkbox is on. If you're not sure whether the plugin is active, uncomment line 10 of the Lua script.
-
 ----------------------------------------------------------------
 CHANGELOG:
 
+v1.2:
+* Fixes errors in net games with a kill limit
+* Fixes incorrect score display in time-based net games
 v1.1:
 * Fixes errors when compass is used in net games
 * Hides ammo for second weapon if you are only carrying one
@@ -45,5 +37,5 @@ v1.0:
 
 ----------------------------------------------------------------
 CONTACT:
-If you have any questions, comments or bugs to report, you can email me:
-- hopper@whpress.com
+If you have any questions, comments or bugs to report, open an issue on GitHub:
+https://github.com/Hopper262/M2-Default-HUD
